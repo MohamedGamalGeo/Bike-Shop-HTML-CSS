@@ -138,7 +138,7 @@ body {
 
 /* Get bike section styling */
 .get-bike {
-    background-image: url('assets/img/bikes.jpg');
+    background-image: url('assets/bikes.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -205,19 +205,19 @@ body {
 
 
 .elctronic {
-    background-image: url('assets/img/electric.jpg'); 
+    background-image: url('assets/electric.jpg'); 
 }
 
 .road {
-    background-image: url('assets/img/road.webp'); 
+    background-image: url('assets/road.webp'); 
 }
 
 .mountain {
-    background-image: url('assets/img/mountain.jpg'); 
+    background-image: url('assets/mountain.jpg'); 
 }
 
 .kids {
-    background-image: url('assets/img/kids.webp'); 
+    background-image: url('assets/kids.webp'); 
 }
 
 
@@ -364,7 +364,7 @@ body {
 
 /* Event Section Styling */
 .events {
-    background-image: url('assets/img/bk.webp');
+    background-image: url('assets/bk.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
