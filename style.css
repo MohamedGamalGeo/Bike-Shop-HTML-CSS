@@ -1,0 +1,518 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+    padding-left: 15p;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*  Headers section Styling */
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header i {
+    width: 60px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.header .logo {
+    width: 60px;
+    margin-left: 5px;
+}
+
+
+.header .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.header .links .icon span {
+    background-color: #222;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 50%;
+    transition: 0.3s;
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    right: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #f6f6f6;
+    display: none;
+    min-width: 200px;
+    top: calc(100% + 15px);
+}
+
+.header .links ul::before {
+    content: "";
+    border: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.header .links:hover ul {
+    display: block;
+    z-index: 1;
+}
+
+.header .links ul li a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: green;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.header .links ul li a:hover {
+    padding-left: 30px;
+    color: var(--main-color);
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+.get-bike{
+
+    background-image: image('ass');
+}
+
+
+/* Get bike section styling */
+.get-bike {
+    background-image: url('assets/img/bikes.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 1100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: green;
+    text-transform: capitalize;
+}
+
+.get-bike h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: green;
+ 
+}
+
+.get-bike p {
+    font-size: 40px;
+
+}
+
+/* Categories section  styling */
+.bikes-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+
+.bikes-categories h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: green;
+   
+}
+
+/* box  */
+.category {
+    position: relative;
+    flex: 1 1 calc(50% - 20px);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+
+.elctronic {
+    background-image: url('assets/img/electric.jpg'); 
+}
+
+.road {
+    background-image: url('assets/img/road.webp'); 
+}
+
+.mountain {
+    background-image: url('assets/img/mountain.jpg'); 
+}
+
+.kids {
+    background-image: url('assets/img/kids.webp'); 
+}
+
+
+
+.category h1 {
+    z-index: 2;
+    position: relative;
+    text-transform: uppercase;
+    
+}
+
+/* Video & Text overlay Scetion */
+
+/* Container for the video background */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+/* Video element styling */
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;   
+    min-height: 100%;  
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); 
+    z-index: -1; 
+}
+
+/* Text overlay content */
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Text styling */
+.video-content p {
+    color: green;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* Best deals section styling */
+
+.best-deals {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.best-deals h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: green;
+}
+
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.deal-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.deal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.deal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.deal-card p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: green;
+}
+
+.price-discount {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.discount {
+    font-size: 14px;
+    color: #e74c3c;
+    background: #fceaea;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.oldPrice {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.newPrice {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.deal-card button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deal-card button:hover {
+    background-color: #2ecc71;
+}
+
+
+/* Event Section Styling */
+.events {
+    background-image: url('assets/img/bk.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 1100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: green;
+    text-transform: capitalize;
+}
+
+.events h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: green;
+ 
+}
+
+.events p {
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+/* About us Section Styling */ 
+.about-us {
+    padding: 50px 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    color: green;
+    margin-bottom: 30px;
+    
+}
+
+.about-content {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px;
+}
+
+.about-content img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer Section with Gradient */
+footer {
+    background: linear-gradient(to right, green, #333); /* Green on the left, transitioning to dark gray */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.footer-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-follow p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.custom-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-menu li {
+    margin-bottom: 10px;
+}
+
+.custom-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.custom-menu li a:hover {
+    color: #f3b712; /* Highlight color */
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-form label {
+    font-size: 14px;
+}
+
+.footer-form input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.footer-form button {
+    padding: 10px 20px;
+    background-color: #f3b712;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-form button:hover {
+    background-color: #e0a60b;
+}
